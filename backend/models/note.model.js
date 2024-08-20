@@ -12,8 +12,9 @@ const noteSchema = new mongoose.Schema({
    description: {
       type: String,
    },
-   keyTags: {
+   tags: {
       type: mongoose.Schema.ObjectId,
+      ref: "Tag",
       default: [],
    }
 }, { timestamps: true });
