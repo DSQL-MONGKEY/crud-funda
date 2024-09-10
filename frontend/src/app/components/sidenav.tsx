@@ -15,18 +15,33 @@ const sidenav = () => {
             />
          </div>
 
-         <div className="flex flex-col bg-blue-200 w-full gap-5 items-center h-full">
-            <div>
-               <Link href={'/pages/notes'}>
-                  Notes
-               </Link>
-            </div>
+         <div className="flex flex-col w-full gap-5 items-center h-full">
+            <Link href={'/'} className="border border-black rounded-xl w-full text-center p-3 hover:bg-slate-200 active:bg-slate-200 shadow">
+               <div >
+                  <span className='font-bold'>
+                     Overview
+                  </span>
+               </div>
+            </Link>
+
+            <Link href={'/pages/todos'} className="border border-black rounded-xl w-full text-center p-3 hover:bg-slate-200 active:bg-slate-200 shadow">
+               <div >
+                  <span className='font-bold'>
+                     Todos
+                  </span>
+               </div>
+            </Link>
+
+            <Link href={'/pages/notes'} className="border border-black rounded-xl w-full text-center p-3 hover:bg-slate-200 active:bg-slate-200 shadow">
+               <div>
+                  <span className='font-bold'>
+                     Notes
+                  </span>
+               </div>
+            </Link>
+
             
-            <div>
-               <Link href={'/pages/todos'}>
-                  Todos
-               </Link>
-            </div>
+            
          </div>
       </div>
    )
